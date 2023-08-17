@@ -1,0 +1,203 @@
+:root {
+    --primary: #16a085;
+    --normal: #202028;
+    --tag-text: #6558d3;
+    --tag-bg: #f1eeff;
+    --important: #f0a901;
+    --urgent: #c91d2f;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 700px;
+    min-width: 400px;
+    margin: 10px auto;
+}
+
+.form-container form {
+    padding: 15px 20px;
+    background: #f4faf4;
+    border-radius: 8px;
+}
+
+.form-container fieldset {
+    border: none;
+    padding: 5px 0px;
+}
+
+.form-container fieldset + fieldset {
+    margin-top: 15px;
+}
+
+.form-container legend {
+    font-size: 1.4em;
+    color: var(--normal);
+    text-transform: capitalize;
+}
+
+.form-container hr {
+    margin-bottom: 25px;
+    color: lightgray;
+}
+
+.form-container label {
+    display: block;
+    color: var(--normal);
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.form-container input[type="radio"] + label {
+    display: inline;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="file"],
+.form-container input[type="password"],
+.form-container select,
+.form-container textarea {
+    transition: all 0.2s ease;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0;
+    outline: 0;
+    padding: 12px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    background: #fff;
+    outline: 1px solid var(--primary);
+}
+
+.form-container input[type="submit"] {
+    position: relative;
+    display: block;
+    padding: 16px 39px;
+    color: #fff;
+    margin: 0 auto;
+    background: var(--primary);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+}
+
+.form-container input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.importance-choices div {
+    display: inline;
+}
+
+.importance-choices #normal-label {
+    color: var(--normal);
+}
+
+.importance-choices #important-label {
+    color: var(--important);
+}
+
+.importance-choices #urgent-label {
+    color: var(--urgent);
+}
+
+.full-page-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*justify-content: center;*/
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.information {
+    padding: 25px;
+}
+
+.information .tag {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.information .tag-back {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: #726060FF;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.information .title {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.information .info {
+    width: 300px;
+    text-align: justify;
+}
+
+.card-head-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-head-wrapper * {
+    font-size: 12px;
+}
+
+.card-head-wrapper time {
+    color: gray;
+}
+
+#user-email {
+    display: block;
+    color: gray;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
